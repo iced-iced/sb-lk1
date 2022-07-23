@@ -4,16 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>2 Семинар</title>
 </head>
 <body>
-    
+    <div class="mycode">
+        <div class="card">
+            <select name="system" id="">
+                <option value="">VISA</option>
+                <option selected>МИР</option>
+                <option value="">Mastercard</option>
+            </select>
+            <input type="number" placeholder="0000" maxlength="4" name="num1">
+            <input type="number" placeholder="0000" maxlength="4" name="num2">
+            <input type="number" placeholder="0000" maxlength="4" name="num3">
+            <input type="number" placeholder="0000" maxlength="4" name="num4">
+            <input type="text" placeholder="Ivanov Ivan" name="User">
+            <div class="card__date">
+                <input type="number" min="1" max="12" maxlength="2" value="7">
+                /
+                <input type="number" min="01" max="99" minlength="2" maxlength="2" value="22">
+            </div>
+        </div>
+    </div>
 </body>
 </html>
 <!-- 
+    terminal->CMD
     git config --global user.name
     git config --global user.email
     
-    git local --global user.name
-    git local --global user.email
+    Авторизация локальной папки с проектом git
+    git  --local user.name
+    git  --local user.email
+
+
 -->
+<!-- 
+    git add . - добавит все файлы для отслеживания
+    git commit -m "Добавляем наш коммит"
+    git puch origin <ветка>
+
+    git pull
+    git clone
+ -->

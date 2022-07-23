@@ -1,0 +1,60 @@
+.mycode {
+    height: 100vh;
+    background-image: linear-gradient(to left buttom coral, silver) 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    padding: 6mm;
+    background-color: blueviolet;
+    width: 85.6mm;
+    height: 53.98mm;
+    border-radius: 3.18mm;
+    color: #fff;
+    box-sizing: border-box;   /* включает паддинкги width=content + border+padding */
+    /* box-sizing: content-box;  width=content  */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5mm;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+select, input {
+    outline: none;
+    background-color: transparent;
+    border: 1px colid;
+    color: inherit;
+    width: 100%;
+    padding: 3px 4px;
+    padding-left: 4px;
+    box-sizing: border-box;
+}
+
+.card>[type="number"] {
+    grid-row-start: 2;
+}
+
+select {
+    grid-column-end: span 2;
+}
+
+[type="text"] {
+    grid-row-start: 3;
+    grid-column-end: span 2;
+}
+
+.card__date {
+grid-row-start: 3;
+display: flex;
+height: 100%;
+align-items: center;
+justify-content: flex-end;
+grid-column-end: span 2;
+gap: 10;
+}
+
+::placeholder{
+    color: coral;
+}
